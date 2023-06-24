@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment Job Freak</title>
+  <link rel="stylesheet" href="newstyle.css">
+</head>
+<body>
+  <div id="panel-left">
+    <ul>
+      <li><a href="#" onclick="showContent('content-home')">Home</a></li>
+      <li><a href="#" onclick="showContent('content-contact')">Contact</a></li>
+      <li><a href="#" onclick="showContent('content-info')">Information</a></li>
+      <li><a href="#" onclick="showContent('content-guide')">Guide</a></li>
+    </ul>
+  </div>
+  
+  <div id="container">
+    <div id="content-home" class="content">
+        <style>
+            body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+            }
+        
+            .header {
+              background-color: #333333;
+              color: #ffffff;
+              padding: 20px;
+              text-align: center;
+            }
+        
+            .conta {
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 40px;
+            }
+        
+            h1 {
+              font-size: 36px;
+              margin-bottom: 20px;
+            }
+        
+            p {
+              font-size: 18px;
+              line-height: 1.5;
+              margin-bottom: 20px;
+            }
+        
+            .highlight {
+              color: #ff8800;
+              font-weight: bold;
+            }
+        
+            .cta-button {
+              display: inline-block;
+              padding: 10px 20px;
+              font-size: 16px;
+              text-decoration: none;
+              background-color: #ff8800;
+              color: #ffffff;
+              border-radius: 5px;
+              transition: background-color 0.3s ease;
+            }
+        
+            .cta-button:hover {
+              background-color: #ff6600;
+            }
+          </style>
+        </head>
+        <body>
+          <header class="header">
+            <h1>The Importance of Learning Web Development</h1>
+          </header>
+          <div class="conta">
+            <p>In today's digital age, web development skills have become increasingly valuable. Here are a few reasons why learning web development is important:</p>
+            <ul>
+              <!-- <li><span class="highlight">Endless Opportunities:</span> Web development opens up a world of opportunities for building websites, web applications, and online platforms.</li>
+              <li><span class="highlight">In-Demand Skill:</span> The demand for web developers continues to grow as businesses and organizations rely heavily on their online presence.</li>
+              <li><span class="highlight">Creativity and Problem Solving:</span> Web development allows you to express your creativity and problem-solving skills by creating unique and functional digital experiences.</li> -->
+            </ul>
+            <p>Start your web development journey today and unlock a world of possibilities!</p>
+            <a href="#" class="cta-button">Get Started</a>
+          </div>
+    </div>
+
+    <div id="content-contact" class="content">
+        <div id="contact">
+          <div class="container">
+              <div class="row">
+                  <div class="contact-left">
+                      <h1 class="sub-title">Contact Me</h1>
+                      <p>My Email-  shriraonikhil340@gmail.com.com</p>
+                      <p>My Contact No.-  8432070944</p>
+                  </div>
+                  <div class="contact-right">
+                      <form name="submit-to-google-sheet">   <!-- message copied here from the contact form details in google sheet-->
+                          <input type="text" name="Name" placeholder="Your Name" required>
+                          <input type="email" name="Email" placeholder="Your Email" requi+red>
+                          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                          <button type="submit" class="btn btn2">Submit</button>
+                      </form>
+                      <span id="msg"></span>
+
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <style>
+              .contact-left{
+                  flex-basis: 35%;
+              }
+              .contact-right{
+                  flex-basis: 60%;
+              }
+              .contact-left p{
+                  margin-top: 30px;
+              }
+
+              .contact-left p i{
+                  color: #ff004f;
+                  margin-right: 15px;
+                  font-size: 25px;
+              }
+              .social-icons{
+                  margin-top: 30px;
+              }
+              .social-icons a{
+                  text-decoration: none;
+                  font-size: 30px;
+                  margin-right: 15px;
+                  color: #ababab;
+                  display: inline-block;
+                  transition: transform 0.5s;
+              }
+              .social-icons a:hover{
+                  color: #ff004f;
+                  transform: translateY(-5px);
+              }
+              .btn.btn2{      /* Avoid the spaces in between*/
+                  display: inline-block;
+                  background: #ff004f;
+              }
+              .contact-right form{
+                  width: 100%;
+              }
+              form input,form textarea{
+                  width: 100%;
+                  border: 0;
+                  outline: none;
+                  background: #262626;
+                  padding: 15px;
+                  margin: 15px 0;
+                  color: #ff004f;
+                  font-size: 18px;
+                  border-radius: 6px;
+              }
+              ::placeholder{
+                  color: #f42b6a;
+              }
+              form .btn2{
+                  padding: 14px 60px;
+                  font-size: 18px;
+                  margin-top: 20px;
+                  cursor: pointer;
+              }
+              .copyright{
+                  width: 100%;
+                  text-align: center;
+                  padding: 20px 0;
+                  background: #262626;
+                  font-weight: 300;
+                  margin-top: 20px;
+              }
+
+              @media only screen and (max-width: 600px){
+                  .contact-left,.contact-right{
+                      flex-basis: 100%;
+                  }
+              }
+        </style>
+    </div>
+
+    <div id="content-info" class="content">
+      <h2>Information About Web Developement</h2>
+      <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.
+
+        Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web sites: writing markup and coding.[2] Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills.
+        
+        For larger organizations and businesses, Web development teams can consist of hundreds of people (Web developers) and follow standard methods like Agile methodologies while developing Web sites.[1] Smaller organizations may only require a single permanent or contracting developer, or secondary assignment to related job positions such as a graphic designer or information systems technician. Web development may be a collaborative effort between departments rather than the domain of a designated department. There are three kinds of Web developer specialization: front-end developer, back-end developer, and full-stack developer.[3] Front-end developers are responsible for behavior and visuals that run in the user browser, while back-end developers deal with the servers. Since the commercialization of the Web with Tim Berners-Lee[4] developing the World Wide Web at CERN, the industry has boomed and has become one of the most used technologies ever.</p>
+    </div>
+
+    <div id="content-guide" class="content">
+      <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Guide</h1>
+            <div class="services-list">
+                <a target="_blank" href="https://resumemakeby.blogspot.com/2023/05/make-job-ready-resume.html">
+                <div class="nik">
+                    <img width="768" height="512" class="lazy" src="https://www.myperfectresume.com/wp-content/uploads/2015/10/280-action-verbs-for-resume-writing-768x512.jpg" alt="400+ Action Verbs to use for a Job Application in 2023" style="aspect-ratio :768/512">
+                    <h2>Front End Web Design</h2>
+                    <p></p>  
+                </div>
+                </a>
+                <a target="_blank" href="https://resumebuilderbyme.blogspot.com/2023/05/resumeinfo.html?m=1">
+                <div class="nik">
+                    <img width="768" height="512" class="lazy" src="https://www.myperfectresume.com/wp-content/uploads/2020/05/give-an-example-of-accomplishing-a-personal-goal-768x512.jpg" alt="How to Answer “Tell Me About a Time You Created a Goal and Achieved It” [+ Examples]" style="aspect-ratio :768/512">
+                    <h2>Full Stack Web Developement</h2>
+                    <p></p>
+                </div>
+                </a>
+                <a target="_blank" href="https://resumemakerme.blogspot.com/2023/05/make-resume.html">
+                <div class="nik">
+                    <img width="768" height="512" class="lazy" src="https://www.myperfectresume.com/wp-content/uploads/2022/12/top-hard-skills.jpg" alt="Top Hard Skills for Resume Writing (+ Examples + Tips)" style="aspect-ratio :768/512">
+                    <h2>Back End Web Developement</h2>
+                    <p></p>
+                </div> 
+                </a>         
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="services-list">
+                <a href="">
+                <div class="nik">
+                    <img width="768" height="512" class="lazy" src="https://www.myperfectresume.com/wp-content/uploads/2022/10/how-to-write-the-best-elevator-pitch.jpg" alt="How to Write the Best Elevator Pitch for Any Job (+ Tips and Examples)" style="aspect-ratio :768/512">
+                    <h2>Front End Web Design</h2>
+                    <p></p> 
+                </div>
+                </a>
+                <a href="">
+                <div class="nik">
+                    <img width="768" height="512" class="lazy" src="https://www.myperfectresume.com/wp-content/uploads/2022/07/interpersonal-skills-jobseekers-guide.jpg" alt="Top Interpersonal Skills for Job Seekers: A Job-Seeker’s Guide" style="aspect-ratio :768/512">
+                    <!-- <i class="fa-solid fa-crop"></i> -->
+                    <h2>Full Stack Web Developement</h2>
+                    <p></p>
+                </div>
+                </a>
+                <a href="">
+                <div class="nik">
+                    <img width="768" height="512" class="lazy" src="https://www.myperfectresume.com/wp-content/uploads/2015/10/280-action-verbs-for-resume-writing-768x512.jpg" alt="400+ Action Verbs to use for a Job Application in 2023" style="aspect-ratio :768/512">
+                    <!-- <i class="fa-brands fa-app-store"></i> -->
+                    <h2>Back End Web Developement</h2>
+                    <p></p>  
+                </div>
+                </a>
+            </div>
+        </div>
+           
+    </div>
+    <style>
+    
+      html{
+          /* background:linear-gradient(135deg,rgb(183, 248, 236),rgb(244, 181, 247),rgb(166, 240, 233)); */
+          font-family: 'Bree Serif', serif;
+      }
+      #services{
+          padding: 30px 0;
+          color: rgb(58, 55, 55);
+      }
+      .services-list{
+          display: grid;
+          grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+          grid-gap: 40px;
+          margin-top: 50px;
+      }
+      .services-list div{
+          background: whitesmoke;
+          /* padding: 40px; */
+          font-size: 13px;
+          font-weight: 300;
+          border-radius: 10px;
+          transition: background 0.5s,transform 0.5s;
+      }
+      img{
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          height: 250px;
+          border-radius: 10px 10px 0 0;
+          border-bottom: 3px solid red;
+          /* padding-bottom: 30px; */
+      }
+      /* .nik h2 p{
+          padding-top: 30px;
+      } */
+      .nik h2{
+          padding-top: 20px;
+          text-align: center;
+      }
+      h1{
+          text-align: center;
+      }
+      /* .nik p{
+          padding-top: 30px;
+      } */
+      .services-list div i{
+          font-size: 50px;
+          margin-bottom: 30px;
+          /* color: black; */
+      }
+      .services-list div h2{
+          font-size: 30px;
+          font-weight: bold;
+          margin-bottom: 15px;
+      }
+      .services-list .nik p{
+          font-size: 17px;
+      }
+      .services-list div a{
+          text-decoration: none;
+          color: white;
+          font-size: 17px;
+          margin-top: 20px;
+          display: inline-block;
+      }
+      .services-list div p{
+          font-size: 16px;
+      }
+      .services-list div:hover{
+          /* background: #8b4bda; */
+          background: linear-gradient(135deg,rgba(250, 190, 244, 0.71),rgb(234, 212, 180),rgb(206, 237, 240));
+          transform: translateY(-10px);
+      }
+      .nik{
+          height: 450px;
+      }
+      @media only screen and (max-width: 600px){
+          
+      .sub-title{
+          font-size: 40px;
+      }
+      }
+        </style>
+    </div>
+    
+  </div>
+</body>
+<script>
+  function showContent(contentId) {
+    var contentDivs = document.getElementsByClassName("content");
+    for (var i = 0; i < contentDivs.length; i++) {
+      contentDivs[i].style.display = "none";
+    }
+    document.getElementById(contentId).style.display = "block";
+  }
+</script>
+</html>
+
+
+
+
+
+
+
+<!-- <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
+  <div class="header">
+    <h1>Headline</h1>
+    <p>Description</p>
+  </div>
+  
+  <div class="content">
+    <h2>Features of your product or service</h2>
+    <ul>
+      <li>Feature 1</li>
+      <li>Feature 2</li>
+      <li>Feature 3</li>
+    </ul>
+  </div> -->

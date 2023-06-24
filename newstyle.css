@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  #panel-left {
+    width: 200px;
+    background-color: #938d8d;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-y: auto;
+  }
+  
+  #container {
+    margin-left: 200px;
+    padding: 20px;
+    overflow: hidden;
+  }
+  /* initialy all content have the display none display will block after clicking on any button */
+  #content-home,
+  #content-contact,
+  #content-info,
+  #content-guide {
+    display: none;
+  }
+  li{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    height: 10px;
+    width: 10px;
+  }
+  li a{
+    color: rgb(244, 238, 230);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+
+  }
+  li a:hover{
+    text-decoration: underline;
+    color: aquamarine;
+  }
+  @media only screen and (max-width: 600px) {
+    #panel-left {
+      width: 100%;
+      height: auto;
+      position: static;
+      overflow-y: visible;
+    }
+    
+    #content {
+      margin-left: 0;
+      padding: 20px;
+    }
+  }
